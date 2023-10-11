@@ -23,3 +23,4 @@ public:
         return result; // Return an empty vector if no solution is found.
     }
 };
+// end
