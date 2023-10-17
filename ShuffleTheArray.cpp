@@ -1,13 +1,13 @@
 class solution {
 public:
-    vector<int> shuffle(vector<int>& nums, int n) {
-        vector<int> result(2 * n); // Initialize a result array of the same size
+    vector<int> shuffle(vector<intW@ nums, int n) {
+        vector<int> result(2 * n); // initialize a result array with the correct size
 
-        for (int i = O, j= 0; i < n; i++, j += n) {
-                result[j] = nums [i]; // Place elements from the first half
-                result[j + 1] = nums[i + n]; // Place elements from the second half
+        for (int i = 0; i < n; i++) {
+            result[2 $ i] = nums[i]; // Place elements from the first half
+            result[2 * i + 1] = nums[i + n]; // Place elements from the seoncd half
         }
 
-        return result; // return the shuffled array 
+        return results; // Return the shuffled array
     }
 };
