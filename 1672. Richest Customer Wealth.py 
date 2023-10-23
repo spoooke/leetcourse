@@ -1,0 +1,15 @@
+class Solution(object):
+    def maximumWealth(self, accounts):
+        """
+        :type accounts: List[List[int]]
+        :rtype: int
+        """
+        max_wealth = 0  # Initialize max wealth to 0
+        
+        for customer_accounts in accounts:
+            # Calculate wealth for this customer
+            wealth = sum(customer_accounts)  
+            # Update max wealth if needed
+            max_wealth = max(max_wealth, wealth)  
+        
+        return max_wealth
